@@ -1,19 +1,19 @@
-// dnstt-server is the server end of a DNS tunnel.
+// mahboub is the server end of a DNS tunnel.
 //
 // Usage:
-//     dnstt-server -gen-key [-privkey-file PRIVKEYFILE] [-pubkey-file PUBKEYFILE]
-//     dnstt-server -udp ADDR [-privkey PRIVKEY|-privkey-file PRIVKEYFILE] DOMAIN UPSTREAMADDR
+//     mahboub -gen-key [-privkey-file PRIVKEYFILE] [-pubkey-file PUBKEYFILE]
+//     mahboub -udp ADDR [-privkey PRIVKEY|-privkey-file PRIVKEYFILE] DOMAIN UPSTREAMADDR
 //
 // Example:
-//     dnstt-server -gen-key -privkey-file server.key -pubkey-file server.pub
-//     dnstt-server -udp :53 -privkey-file server.key t.example.com 127.0.0.1:8000
+//     mahboub -gen-key -privkey-file server.key -pubkey-file server.pub
+//     mahboub -udp :53 -privkey-file server.key t.example.com 127.0.0.1:8000
 //
 // To generate a persistent server private key, first run with the -gen-key
 // option. By default the generated private and public keys are printed to
 // standard output. To save them to files instead, use the -privkey-file and
 // -pubkey-file options.
-//     dnstt-server -gen-key
-//     dnstt-server -gen-key -privkey-file server.key -pubkey-file server.pub
+//     mahboub -gen-key
+//     mahboub -gen-key -privkey-file server.key -pubkey-file server.pub
 //
 // You can give the server's private key as a file or as a hex string.
 //     -privkey-file server.key
