@@ -1,11 +1,11 @@
-// dnstt-client is the client end of a DNS tunnel.
+// mahboub-million is the client end of a DNS tunnel.
 //
 // Usage:
-//     dnstt-client [-doh URL|-dot ADDR|-udp ADDR] -pubkey-file PUBKEYFILE DOMAIN LOCALADDR
+//     mahboub-million [-doh URL|-dot ADDR|-udp ADDR] -pubkey-file PUBKEYFILE DOMAIN LOCALADDR
 //
 // Examples:
-//     dnstt-client -doh https://resolver.example/dns-query -pubkey-file server.pub t.example.com 127.0.0.1:7000
-//     dnstt-client -dot resolver.example:853 -pubkey-file server.pub t.example.com 127.0.0.1:7000
+//     mahboub-million -doh https://resolver.example/dns-query -pubkey-file server.pub t.example.com 127.0.0.1:7000
+//     mahboub-million -dot resolver.example:853 -pubkey-file server.pub t.example.com 127.0.0.1:7000
 //
 // The program supports DNS over HTTPS (DoH), DNS over TLS (DoT), and UDP DNS.
 // Use one of these options:
